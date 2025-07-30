@@ -1,0 +1,24 @@
+{
+	"name": "rotating-cache",
+	"version": "0.1.0",
+	"description": "Quick rotating cache util",
+	"type": "module",
+	"files": [
+		"dist"
+	],
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": "./dist/index.cjs",
+		"./package.json": "./package.json"
+	},
+	"scripts": {
+		"build": "tsdown",
+		"dev": "tsdown --watch"
+	},
+	"devDependencies": {
+		"prettier": "^3.6.2",
+		"tsdown": "latest"
+	}
+}
