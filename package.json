@@ -1,6 +1,6 @@
 {
 	"name": "rotating-cache",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"description": "Quick rotating cache util",
 	"type": "module",
 	"files": [
