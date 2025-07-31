@@ -14,8 +14,10 @@ export default function createCache<V, T>({
 		past: {},
 	};
 
+	const perCacheLimit = Math.floor((cacheSize + 1) / 2);
+
 	function rotateIfNeeded(): void {
-		if (Object.keys(cache.main).length >= cacheSize / 2) {
+		if (Object.keys(cache.main).length >= perCacheLimit) {
 			[cache.main, cache.past] = [{}, cache.main];
 		}
 	}
